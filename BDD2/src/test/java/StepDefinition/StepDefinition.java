@@ -18,6 +18,7 @@ public class StepDefinition {
 		driver = new FirefoxDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 	   // throw new PendingException();
+		System.out.println();
 	}
 
 	@When("^Validate Login Application$")
