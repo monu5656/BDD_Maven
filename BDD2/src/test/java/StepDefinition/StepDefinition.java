@@ -1,5 +1,6 @@
 package StepDefinition;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -17,6 +18,9 @@ public class StepDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 		driver = new FirefoxDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.findElement(By.xpath("//*[@id='txtUsername']")).sendKeys("Admin");
+		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("admin123");
+		driver.findElement(By.xpath("//*[@id='btnLogin']")).click();
 	   // throw new PendingException();
 		System.out.println();
 	}
