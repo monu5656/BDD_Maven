@@ -43,5 +43,6 @@
 	<classpathentry kind="lib" path="E:/New folder (2)/Cucumber/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="E:/New folder (2)/Cucumber/mockito-all-2.0.2-beta.jar"/>
 	<classpathentry kind="lib" path="E:/selenium server/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="lib" path="E:/selenium server/testng-6.9.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
