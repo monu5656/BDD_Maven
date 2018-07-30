@@ -8,26 +8,23 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepDefinition {
-	
+	//String path = "E:\\Gecofriver for BDD Firefox\\";
 	WebDriver driver;
 	String title;
 	@Given("^login Application should be available$")
 	public void login_Application_should_be_available() {
 	    // Write code here that turns the phrase above into concrete actions
+		System.setProperty("webdriver.gecko.driver", "E:\\Gecofriver for BDD Firefox\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/");
-		driver.findElement(By.xpath("//*[@id='txtUsername']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("admin123");
-		driver.findElement(By.xpath("//*[@id='btnLogin']")).click();
-	   // throw new PendingException();
-		System.out.println();
+		driver.navigate().to("http://www.google.com/");
+		String Title=driver.getTitle();
 	}
 
 	@When("^Validate Login Application$")
 	public void validate_Login_Application() {
 	    // Write code here that turns the phrase above into concrete actions
 		//title = driver.getTitle();
-		System.out.println("title");
+		System.out.println("Title");
 		
 	    //throw new PendingException();
 	}
